@@ -1,11 +1,14 @@
 import streamlit as st
 
-st.title("A simple app")
+st.title("Knowing your favourite programming language")
 st.header("Made with Streamlit")
 st.text("Welcome to my first interactive app!")
 
 st.subheader("Choose your favourite programming language :")
-language = st.selectbox("Your fav language :" , ["Java Script", "CSS", "Python", "HTML", "Java", "C", "C++", "Markdown" ])
+language = st.selectbox("Your fav language :" , ["Select a language", "Java Script", "CSS", "Python", "HTML", "Java", "C", "C++", "Markdown" ])
+if language != "Select a language":
+    st.write(f"You chose {language}. Hmm that's a decent choice")
+    
 if language == "Java Script":
     st.write("We use JavaScript primarily because it is the only programming language that runs directly in web browsers, making it the essential tool for turning static pages into interactive experiences.")
 elif language == "CSS":
@@ -22,3 +25,6 @@ elif language == "C++":
     st.write("C++ is a powerhouse in the tech world primarily because it offers a rare combination of high-level abstraction and low-level control. Developers use it when performance, memory efficiency, and direct hardware interaction are the top priorities.")
 elif language == "Markdown":
     st.write("Markdown is used primarily because it is a fast, easy-to-read, and future-proof way to format text without the clutter of complex rich-text editors (like Microsoft Word or Google Docs). Created to be simple to write and read, it serves as a lightweight alternative to HTML.")
+
+if language != "Select a language":  
+    st.success("You can call yourself a Coding Brat!")
