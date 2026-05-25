@@ -7,7 +7,7 @@ st.text("Welcome to my first interactive app!")
 st.subheader("Choose your favourite programming language :")
 language = st.selectbox("Your fav language :" , ["Select a language", "Java Script", "CSS", "Python", "HTML", "Java", "C", "C++", "Markdown" ])
 if language != "Select a language":
-    st.write(f"You chose {language}. Hmm that's a decent choice")
+    st.write(f"You chose {language}. Excellent choice!")
     
 if language == "Java Script":
     st.write("We use JavaScript primarily because it is the only programming language that runs directly in web browsers, making it the essential tool for turning static pages into interactive experiences.")
