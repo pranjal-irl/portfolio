@@ -7,7 +7,7 @@ def set_bg_image():
         f"""
         <style>
         .stApp {{
-            background-image: url("https://images.pexels.com/photos/6308163/pexels-photo-6308163.jpeg");
+            background-image: url("https://images.pexels.com/photos/34804021/pexels-photo-34804021.jpeg");
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
@@ -21,7 +21,7 @@ def set_bg_image():
 set_bg_image()
 
 # Rest of your app code goes below
-st.title("My App with a Background Image")
+
 
 
 st.title("Knowing your favourite programming language")
