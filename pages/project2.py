@@ -1,5 +1,29 @@
 import streamlit as st
 
+import streamlit as st
+
+def set_bg_image():
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("https://images.pexels.com/photos/6308163/pexels-photo-6308163.jpeg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+# Call the function to apply the background
+set_bg_image()
+
+# Rest of your app code goes below
+st.title("My App with a Background Image")
+
+
 st.title("Know about your coding level")
 st.text("You probably know where you are but have you ever thought in this way?")
 
