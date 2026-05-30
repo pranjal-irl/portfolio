@@ -78,4 +78,4 @@ if picture is not None :
     with col3:
         st.image("Images/folkmeme.jpg")
     from streamlit_extras.let_it_rain import rain
-    rain(emoji="🤣", font_size=54, falling_speed=15, animation_length=2)
+    rain(emoji="🤣", font_size=54, falling_speed=1, animation_length=1)
